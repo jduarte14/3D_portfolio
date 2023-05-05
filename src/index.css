@@ -22,6 +22,11 @@ body {
   padding-bottom: 100px;
   display: block;
 }
+
+.inver {
+  filter: invert();
+}
+
 .bottom-30 {
   bottom:5rem;
 }
@@ -218,8 +223,8 @@ a svg {
 
 @media all and (max-width:640px) {
   .hash-span {
-    margin-top:30px;
-    padding-bottom:30px;
+    margin-top:10px;
+    padding-bottom:10px;
   }
 
 }
