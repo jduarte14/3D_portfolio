@@ -7,7 +7,6 @@ import Tech from './components/Tech';
 import FeedBacks from './components/Feedbacks';
 import Hero from './components/Hero';
 import NavBar from './components/Navbar';
-import Works from './components/works';
 import StarsCanvas from './components/canvas/Stars'
 function App() {
   return (
