@@ -7,10 +7,16 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  if (computer.scene && computer.scene.position && !isNaN(computer.scene.position.x) && !isNaN(computer.scene.position.y) && !isNaN(computer.scene.position.z)) {
+  if (
+    computer.scene &&
+    computer.scene.position &&
+    !isNaN(computer.scene.position.x) &&
+    !isNaN(computer.scene.position.y) &&
+    !isNaN(computer.scene.position.z)
+  ) {
     return (
       <mesh>
-        <hemisphereLight intensity={0.15} groundColor='black' />
+        <hemisphereLight intensity={0.15} groundColor="black" />
         <spotLight
           position={[-20, 50, 10]}
           angle={0.12}
@@ -37,12 +43,8 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-
     setIsMobile(mediaQuery.matches);
-
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
@@ -50,31 +52,33 @@ const ComputersCanvas = () => {
 
     mediaQuery.addEventListener("change", handleMediaQueryChange);
 
-
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
 
   return (
-    <Canvas
-      frameloop='demand'
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+    <div style={{ width: "100%", height: "100vh" }}>
+      <Canvas
+        frameloop="demand"
+        shadows
+        dpr={[1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+        style={{ width: "100%", height: "100%" }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 
