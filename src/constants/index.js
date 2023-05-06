@@ -151,7 +151,7 @@ const testimonials = [
   {
     testimonial:"He consistently provided timely solutions and was a tremendous help throughout creating our sites.",
     name: "Paolo Cerizola",
-    designation: "Operations Managerr",
+    designation: "Operations Manager",
     company: "Fenicio",
     image: santiago,
   },
