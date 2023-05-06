@@ -57,7 +57,7 @@ const Tech = () => {
             visible: { opacity: 1, y: 0 },
             hidden: { opacity: 0, y: 50 },
           }}
-          transition={{ duration: 0.5, delay: 0.5 }}
+          transition={{ duration: 0.3, delay: 0.3 }}
         >
           <motion.img
             src={DownloadSvg}
@@ -65,7 +65,7 @@ const Tech = () => {
             alt=""
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
           />
           Download my Resume
         </motion.a>
