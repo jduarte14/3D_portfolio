@@ -45,7 +45,7 @@ const Navbar = () => {
         >
            <img src={logo} alt='logo' className='w-10 h-10 object-contain' />
           <p className='text-white text-[18px]  font-bold ml-[-8px] cursor-pointer flex '>
-            esings
+            uarte
           </p>
         </Link>
 

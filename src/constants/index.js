@@ -23,7 +23,7 @@ import {
 
 
 import ignacio from './../assets/testimonials/ignacio.jpg';
-import paolo from './../assets/testimonials/paolo.jpg';
+import emma from './../assets/testimonials/emmanuel.jpg';
 import santiago from './../assets/testimonials/santiago.jpg';
 
 export const navLinks = [
@@ -149,11 +149,11 @@ const testimonials = [
     image: santiago,
   },
   {
-    testimonial:"He consistently provided timely solutions and was a tremendous help throughout creating our sites.",
-    name: "Paolo Cerizola",
-    designation: "Operations Manager",
+    testimonial:"Joaquin is a meticulous worker and versatile in their programming approach, always striving to innovate with the latest technologies.",
+    name: "Emmanuel Quintana",
+    designation: "Lead Fullstack Developer",
     company: "Fenicio",
-    image: santiago,
+    image: emma,
   },
 ];
 
