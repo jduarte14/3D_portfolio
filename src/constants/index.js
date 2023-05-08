@@ -149,7 +149,7 @@ const testimonials = [
     image: santiago,
   },
   {
-    testimonial:"Joaquin is a meticulous worker and versatile in their programming approach, always striving to innovate with the latest technologies.",
+    testimonial:"Joaquin is a meticulous worker and versatile in his programming approach, always striving to innovate with the latest technologies.",
     name: "Emmanuel Quintana",
     designation: "Lead Fullstack Developer",
     company: "Fenicio",
