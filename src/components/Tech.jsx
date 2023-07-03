@@ -2,7 +2,7 @@ import React from "react";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 import DownloadSvg from "./../assets/download.svg"
-import Resume from "./../download_file/Resume Joaquin Duarte.pdf"
+import Resume from "./../download_file/Resume_Joaquin_Duarte.pdf"
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 const Tech = () => {
@@ -16,7 +16,7 @@ const Tech = () => {
         ))}
       </div>
       <div className="flex justify-center pt-20">
-        <a href={Resume} download="Resume Joaquin Duarte.pdf" className="flex items-center bg-tertiary py-3 px-5 border-w-2 white rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:opacity[0.8]">
+        <a href={Resume} download="Resume_Joaquin_Duarte.pdf" className="flex items-center bg-tertiary py-3 px-5 border-w-2 white rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:opacity[0.8]">
           <img src={DownloadSvg} className="w-10 h-10 mr-2 invert" alt="" /> Download my Resume
         </a>
 
